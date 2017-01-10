@@ -81,17 +81,14 @@
 	对于DefaultLifeCycle来说，do nothing就是其职责。
 	因此接下来我们可以写一个自己的实现类，继承DefaultLifeCycle，并重写那些感兴趣的生命周期方法。
 	
-# MARKDOWN 画流程图
-   
-   	```flow
-  	st=>start: Start
-	op=>operation: Your Operation
-	sub=>subroutine: My Subroutine
-	cond=>condition: Yes or No?
-	io=>inputoutput: catch something...
-	e=>end: End
-	st->op->cond
-	cond(yes)->io->e
-	cond(no)->sub(right)->op
-	
-	```
+# 流程图
+```flow
+st=>start: Start
+e=>end
+op=>operation: My Operation
+cond=>condition: Yes or No?
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
