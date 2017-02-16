@@ -20,6 +20,11 @@ public class LifecycleException extends Exception{
 		// TODO Auto-generated constructor stub
 	}
 
+	
+	public LifecycleException(String msg) {
+		// TODO Auto-generated constructor stub 
+		 super(msg);  
+	}
 	/**
 	 * 
 	 */
